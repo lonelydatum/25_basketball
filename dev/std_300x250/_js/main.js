@@ -33,7 +33,7 @@ function start() {
 
 	// tl.set(".frame2", {opacity:1}, "f2")
 	
-	tl.to(".frame1", .2, {opacity:0}, 3.5)
+	tl.to(".frame1", .2, {opacity:0}, 3.1)
 	tl.to(".frame2", .2, {opacity:1})
 
 
