@@ -7,7 +7,7 @@ function start() {
 
 
 	const tlPlaerys = new TimelineMax()
-	const TIME_SHOOT = 5
+	const TIME_SHOOT = 4
 
 	tlPlaerys.add('player', .3)
 	tlPlaerys.from(".draw_shoot_player", TIME_SHOOT, {x:"+=10", y:"+=90", ease:Power2.easeOut}, 'player')
@@ -23,7 +23,7 @@ function start() {
 	
 	tlText.from(".t1a", .01, {opacity:0}, "+=.3")
 	tlText.from(".t1b", .01, {opacity:0}, "+=.3")
-	
+
 	
 
 	tl.add(tlText)

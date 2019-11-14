@@ -221,6 +221,17 @@ sup {
   transform-origin: 170px 90px;
 }
 
+.logo-corner {
+  -webkit-transform: translate(342px, 53px) scale(0.27, 0.27);
+  -ms-transform: translate(342px, 53px) scale(0.27, 0.27);
+  transform: translate(342px, 53px) scale(0.27, 0.27);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 #banner {
   font-size: 20px;
   color: #333;

@@ -8,7 +8,7 @@ function start() {
 	tl.set(".frame1", { opacity: 1 });
 
 	var tlPlaerys = new TimelineMax();
-	var TIME_SHOOT = 5;
+	var TIME_SHOOT = 4;
 
 	tlPlaerys.add('player', .3);
 	tlPlaerys.from(".draw_shoot_player", TIME_SHOOT, { x: "+=10", y: "+=90", ease: Power2.easeOut }, 'player');

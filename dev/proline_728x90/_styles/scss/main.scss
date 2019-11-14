@@ -14,6 +14,10 @@
 	// @include pos(-150, -250);
 }
 
+.logo-corner{
+	@include pos-scale(342, 53, .27);
+}
+
 
 #banner{
 	font-size: 20px;
