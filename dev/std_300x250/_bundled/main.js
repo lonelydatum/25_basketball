@@ -20,12 +20,12 @@ function start() {
 
 	var tlText = new TimelineMax();
 
-	tlText.from(".t1a", .01, { opacity: 0 }, "+=.2");
+	tlText.from(".t1a", .01, { opacity: 0 }, "+=.3");
 	tlText.from(".t1b", .01, { opacity: 0 }, "+=.3");
 	tlText.from(".t1c", .01, { opacity: 0 }, "+=.3");
 	tlText.from(".t1d", .01, { opacity: 0 }, "+=.3");
 
-	tl.add(tlText, .8);
+	tl.add(tlText);
 
 	// tl.add("f2", 1)
 
