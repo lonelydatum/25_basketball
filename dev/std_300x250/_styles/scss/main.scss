@@ -11,7 +11,7 @@
 
 .illust{
 	transform-origin: 50% 100%;
-	@include pos-scale(-150, -250, .5);
+	// @include pos(-150, -250);
 }
 
 

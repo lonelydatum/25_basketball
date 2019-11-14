@@ -23,19 +23,20 @@ function start() {
 	tl.from(".t1c", .01, { opacity: 0 }, "+=.15");
 	tl.from(".t1d", .01, { opacity: 0 }, "+=.15");
 
-	// tl.add("f2", "+=2")
+	tl.add("f2");
 
 	// tl.set(".frame2", {opacity:1}, "f2")
 
-	tl.to(".frame1", .4, { opacity: 0 }, "+=1.6");
+	tl.to(".frame1", .2, { opacity: 0 }, "+=1.6");
 	tl.to(".frame2", .4, { opacity: 1 });
 
 	tl.from(".phone", .4, { y: "+=150" });
 	tl.from(".illust", .4, { scale: 0 });
 
-	tl.from(".t2", .4, { opacity: 0 });
-	tl.from(".cta", .4, { opacity: 0 });
-	tl.from(".legal", .4, { opacity: 0 });
+	tl.from(".t2", .3, { opacity: 0 }, "+=.1");
+	tl.from(".cta", .3, { opacity: 0 }, "+=.5");
+	tl.to(".cta", .2, { opacity: 0 }, "+=2");
+	tl.from([".cta2", ".legal"], .4, { opacity: 0 });
 
 	// tl.gotoAndPlay("f2")
 }
