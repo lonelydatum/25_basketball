@@ -215,6 +215,10 @@ sup {
   opacity: 0;
 }
 
+.frame1 {
+  opacity: 1;
+}
+
 .illust {
   -webkit-transform-origin: 170px 90px;
   -ms-transform-origin: 170px 90px;
@@ -243,6 +247,28 @@ sup {
   -webkit-transform: translate(7px, 40px);
   -ms-transform: translate(7px, 40px);
   transform: translate(7px, 40px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.draw_shoot_player {
+  -webkit-transform: translate(30px, -20px) scale(0.5, 0.5);
+  -ms-transform: translate(30px, -20px) scale(0.5, 0.5);
+  transform: translate(30px, -20px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.draw_defend_player {
+  -webkit-transform: translate(-30px, -20px) scale(0.5, 0.5);
+  -ms-transform: translate(-30px, -20px) scale(0.5, 0.5);
+  transform: translate(-30px, -20px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

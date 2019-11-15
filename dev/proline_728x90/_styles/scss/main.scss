@@ -5,7 +5,7 @@
 
 
 .frame1 {
-	// opacity: 1;
+	opacity: 1;
 }
 
 
@@ -30,4 +30,12 @@
 #legalBtn{	
 	@include pos(7, 40);
 	// opacity: 1;
+}
+
+.draw_shoot_player{
+	@include pos-scale(30, -20, .5);
+}
+
+.draw_defend_player{
+	@include pos-scale(-30, -20, .5);	
 }
