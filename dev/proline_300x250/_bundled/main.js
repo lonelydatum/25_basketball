@@ -9,14 +9,14 @@ function start() {
 
 	var tlPlaerys = new TimelineMax();
 	var TIME_SHOOT = 5;
+	var y = 80;
+	tlPlaerys.add('player', 0);
+	tlPlaerys.from(".draw_shoot_player", TIME_SHOOT, { x: "+=10", y: "+=" + y, ease: Power2.easeOut }, 'player');
+	// tlPlaerys.from(".draw_shoot_lines", TIME_SHOOT*.9, {x:"+=10", y:`+=${y}`, ease:Power2.easeOut}, 'player')
 
-	tlPlaerys.add('player', .3);
-	tlPlaerys.from(".draw_shoot_player", TIME_SHOOT, { x: "+=10", y: "+=230", ease: Power2.easeOut }, 'player');
-	tlPlaerys.from(".draw_shoot_lines", TIME_SHOOT * .9, { x: "+=10", y: "+=230", ease: Power2.easeOut }, 'player');
-
-	tlPlaerys.add('defend', .5);
-	tlPlaerys.from(".draw_defend_player", TIME_SHOOT, { x: "-=20", y: "+=230", ease: Power2.easeOut }, 'defend');
-	tlPlaerys.from(".draw_defend_lines", TIME_SHOOT * .9, { x: "-=20", y: "+=230", ease: Power2.easeOut }, 'defend');
+	tlPlaerys.add('defend', 0);
+	tlPlaerys.from(".draw_defend_player", TIME_SHOOT, { x: "-=20", y: "+=" + y, ease: Power2.easeOut }, 'defend');
+	// tlPlaerys.from(".draw_defend_lines", TIME_SHOOT*.9, {x:"-=20", y:`+=${y}`, ease:Power2.easeOut}, 'defend')
 
 	var tlText = new TimelineMax();
 
@@ -31,7 +31,7 @@ function start() {
 
 	// tl.set(".frame2", {opacity:1}, "f2")
 
-	tl.to(".frame1", .2, { opacity: 0 }, 3.1);
+	tl.to(".frame1", .2, { opacity: 0 }, 2.6);
 	tl.to(".frame2", .2, { opacity: 1 });
 
 	tl.from(".phone", .4, { y: "+=150" });
