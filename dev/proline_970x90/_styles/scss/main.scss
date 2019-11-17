@@ -33,9 +33,11 @@
 }
 
 .draw_shoot_player{
-	@include pos-scale(30, 5, .5);
+	// @include pos-scale(30, 5, .5);
+	@include pos-scale(20, 0, .5);
 }
 
 .draw_defend_player{
-	@include pos-scale(-30, -25, .5);	
+	// @include pos-scale(-30, -25, .5);	
+	@include pos-scale(-20, 20, .5);
 }

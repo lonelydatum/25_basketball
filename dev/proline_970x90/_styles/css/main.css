@@ -244,9 +244,9 @@ sup {
 }
 
 .draw_shoot_player {
-  -webkit-transform: translate(30px, 5px) scale(0.5, 0.5);
-  -ms-transform: translate(30px, 5px) scale(0.5, 0.5);
-  transform: translate(30px, 5px) scale(0.5, 0.5);
+  -webkit-transform: translate(20px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(20px, 0px) scale(0.5, 0.5);
+  transform: translate(20px, 0px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -255,9 +255,9 @@ sup {
 }
 
 .draw_defend_player {
-  -webkit-transform: translate(-30px, -25px) scale(0.5, 0.5);
-  -ms-transform: translate(-30px, -25px) scale(0.5, 0.5);
-  transform: translate(-30px, -25px) scale(0.5, 0.5);
+  -webkit-transform: translate(-20px, 20px) scale(0.5, 0.5);
+  -ms-transform: translate(-20px, 20px) scale(0.5, 0.5);
+  transform: translate(-20px, 20px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

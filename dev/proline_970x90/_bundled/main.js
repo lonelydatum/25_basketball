@@ -15,7 +15,7 @@ function start() {
 	// tlPlaerys.from(".draw_shoot_lines", TIME_SHOOT*.85, {x:"+=10", y:"+=70", ease:Power4.easeOut}, 'player')
 
 	tlPlaerys.add('defend', 0);
-	tlPlaerys.to(".draw_defend_player", TIME_SHOOT, { x: 0, y: -55, ease: Power4.easeOut }, 'defend');
+	tlPlaerys.to(".draw_defend_player", TIME_SHOOT, { x: 0, y: -25, ease: Power4.easeOut }, 'defend');
 	// tlPlaerys.from(".draw_defend_lines", TIME_SHOOT*.85, {x:"-=20", y:"+=70", ease:Power4.easeOut}, 'defend')
 
 	var tlText = new TimelineMax();
