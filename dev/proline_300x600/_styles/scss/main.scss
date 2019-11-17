@@ -1,0 +1,29 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame2 {
+	// opacity: 1;
+}
+
+
+.illust{
+	transform-origin: 50% 100%;
+	// @include pos(-150, -250);
+}
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 600px;
+}
+
+
+#legalBtn{	
+	// opacity: 1;
+	@include pos(7, 558);
+}
