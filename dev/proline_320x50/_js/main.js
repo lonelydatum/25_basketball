@@ -7,14 +7,14 @@ function start() {
 
 
 	const tlPlaerys = new TimelineMax()
-	const TIME_SHOOT = 5
+	const TIME_SHOOT = 4
 	const y = 7
 	tlPlaerys.add('player', 0)
-	tlPlaerys.from(".draw_shoot_player", TIME_SHOOT, {x:"+=10", y:`+=${y}`, ease:Power2.easeOut}, 'player')
+	tlPlaerys.to(".draw_shoot_player", TIME_SHOOT, {x:0, y:-6, ease:Power2.easeOut}, 'player')
 	// tlPlaerys.from(".draw_shoot_lines", TIME_SHOOT*.9, {x:"+=10", y:`+=${y}`, ease:Power2.easeOut}, 'player')
 
 	tlPlaerys.add('defend', 0)
-	tlPlaerys.from(".draw_defend_player", TIME_SHOOT, {x:"-=15", y:`+=${y}`, ease:Power2.easeOut}, 'defend')
+	tlPlaerys.to(".draw_defend_player", TIME_SHOOT, {x:0, y:-12, ease:Power2.easeOut}, 'defend')
 	// tlPlaerys.from(".draw_defend_lines", TIME_SHOOT*.9, {x:"-=20", y:`+=${y}`, ease:Power2.easeOut}, 'defend')
 
 

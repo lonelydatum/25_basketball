@@ -27,3 +27,11 @@
 	opacity: 1;
 	// @include pos(7, 159);
 }
+
+.draw_shoot_player{
+	@include pos-scale(10, 9, .5);
+}
+
+.draw_defend_player{
+	@include pos-scale(-20, 5, .5);	
+}
